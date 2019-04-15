@@ -1,0 +1,28 @@
+{
+  "name": "@reviewby/web",
+  "version": "0.0.0",
+  "repository": "https://github.com/reviewbydev/reviewbydev/tree/master/packages/web",
+  "scripts": {
+    "clean": "reviewby-dev clean .nuxt",
+    "build:production": "nuxt build",
+    "format": "reviewby-dev format nuxt.config.ts",
+    "postformat": "npm run tslint",
+    "tslint": "reviewby-dev tslint --project tsconfig.lint.json",
+    "publish:prepare": "npm run clean",
+    "dev": "nuxt"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "nuxt-property-decorator": "2.1.3",
+    "vue-property-decorator": "8.1.0",
+    "vuetify": "1.5.11"
+  },
+  "devDependencies": {
+    "@nuxt/typescript": "2.6.1",
+    "@reviewby/dev": "0.0.0",
+    "nuxt": "2.6.1",
+    "ts-node": "^8.1.0"
+  }
+}

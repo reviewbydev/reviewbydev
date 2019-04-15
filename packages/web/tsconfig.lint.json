@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/@reviewby/dev/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "lib"
+  },
+  "include": [
+    "src/**/*",
+    "nuxt.config.ts"
+  ],
+  "exclude": []
+}
